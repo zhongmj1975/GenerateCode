@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName></SccProjectName>
+    <SccProvider></SccProvider>
+    <SccAuxPath></SccAuxPath>
+    <SccLocalPath></SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Company>佛山市易联系科技有限公司</Company>
+    <Product>数据导出与发布层</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FSElink.Bussiness\FSELink.Bussiness.csproj" />
+    <ProjectReference Include="..\FSELink.Entities\FSELink.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

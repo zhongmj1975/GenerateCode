@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName></SccProjectName>
+    <SccProvider></SccProvider>
+    <SccAuxPath></SccAuxPath>
+    <SccLocalPath></SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Company>佛山市易联系科技有限公司</Company>
+    <Product>业务逻辑层</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DbCore\**" />
+    <EmbeddedResource Remove="DbCore\**" />
+    <None Remove="DbCore\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="FSELink.Bussiness.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FSELink.DAL\FSElink.DAL.csproj" />
+    <ProjectReference Include="..\FSELink.Entities\FSELink.Entities.csproj" />
+    <ProjectReference Include="..\FSElink.Utilities\FSELink.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NetCore.SqlELink">
+      <HintPath>..\packages\NetCore.SqlELink.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName></SccProjectName>
+    <SccProvider></SccProvider>
+    <SccAuxPath></SccAuxPath>
+    <SccLocalPath></SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Company>佛山市易联系科技有限公司</Company>
+    <Product>系统通用库</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BarcodeRuleType.cs" />
+    <Compile Remove="CreateCodeStep.cs" />
+    <Compile Remove="DataBase.cs" />
+    <Compile Remove="Extention\Extention.String.cs" />
+    <Compile Remove="Helper\AsposeOfficeHelper.cs" />
+    <Compile Remove="Helper\BaiduApiHelper.cs" />
+    <Compile Remove="Helper\EnumHelper.cs" />
+    <Compile Remove="Helper\ExceptionHelper.cs" />
+    <Compile Remove="Helper\FileZipHelper.cs" />
+    <Compile Remove="Helper\GuidHelper.cs" />
+    <Compile Remove="Helper\HttpClientHelper.cs" />
+    <Compile Remove="Helper\HttpHelper.cs" />
+    <Compile Remove="Helper\ImgHelper.cs" />
+    <Compile Remove="Helper\IocHelper.cs" />
+    <Compile Remove="Helper\PathHelper.cs" />
+    <Compile Remove="Helper\QRCodeHelper.cs" />
+    <Compile Remove="musicplay.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="FSELink.Utilities.csproj.vspscc" />
+    <None Remove="KingWin.Utilities.csproj.vspscc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Extention\Extention.String.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.Cells" Version="21.10.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Quartz" Version="3.3.3" />
+    <PackageReference Include="SharpZipLib" Version="1.3.2" />
+  </ItemGroup>
+
+</Project>

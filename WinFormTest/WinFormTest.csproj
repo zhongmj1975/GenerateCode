@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName></SccProjectName>
+    <SccProvider></SccProvider>
+    <SccAuxPath></SccAuxPath>
+    <SccLocalPath></SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>图标.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FSElink.Bussiness\FSELink.Bussiness.csproj" />
+    <ProjectReference Include="..\FSELink.Entities\FSELink.Entities.csproj" />
+    <ProjectReference Include="..\FSELink.SupperCode\FSELink.SupperCode.csproj" />
+    <ProjectReference Include="..\FSElink.Utilities\FSELink.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="System.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
